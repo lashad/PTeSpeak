@@ -1,0 +1,15 @@
+PTeSpeak
+========================
+
+Do you want your iPhone/iPad to speak Georgian? Or any other language ?
+PTeSpeak is a wrapper class for popular open source engine [eSpeak](http://espeak.sourceforge.net/).
+
+How to build demo app
+---------------------
+- Git clone `espeak` demo app to your local disk.
+- Download the latest eSpeak development version at [Downlaod](http://espeak.sourceforge.net/test/espeak-1.46.14.zip).
+Extract and copy entire directory `espeak-1.46.14` to your just cloned `espeak` directory.
+- Open `espeak.xcodeproj` XCode project and run demo app.
+
+Note: You need XCode 4.0 in order to build and run demo app.
+

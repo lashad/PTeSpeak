@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6BCE0D71529AB36007AD2E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BCE0D61529AB36007AD2E7 /* UIKit.framework */; };
+		C6BCE0D91529AB36007AD2E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BCE0D81529AB36007AD2E7 /* Foundation.framework */; };
+		C6BCE0DB1529AB36007AD2E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BCE0DA1529AB36007AD2E7 /* CoreGraphics.framework */; };
+		C6BCE0E11529AB36007AD2E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6BCE0DF1529AB36007AD2E7 /* InfoPlist.strings */; };
+		C6BCE0E31529AB36007AD2E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE0E21529AB36007AD2E7 /* main.m */; };
+		C6BCE0E71529AB36007AD2E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE0E61529AB36007AD2E7 /* AppDelegate.m */; };
+		C6BCE0EA1529AB36007AD2E7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BCE0E81529AB36007AD2E7 /* MainStoryboard_iPhone.storyboard */; };
+		C6BCE0ED1529AB36007AD2E7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BCE0EB1529AB36007AD2E7 /* MainStoryboard_iPad.storyboard */; };
+		C6BCE0F01529AB36007AD2E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE0EF1529AB36007AD2E7 /* ViewController.m */; };
+		C6BCE0F81529AB55007AD2E7 /* PTeSpeak.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE0F71529AB54007AD2E7 /* PTeSpeak.m */; };
+		C6BCE0FA1529AB67007AD2E7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BCE0F91529AB67007AD2E7 /* AudioToolbox.framework */; };
+		C6BCE0FC1529AB8F007AD2E7 /* espeak-data in Resources */ = {isa = PBXBuildFile; fileRef = C6BCE0FB1529AB8F007AD2E7 /* espeak-data */; };
+		C6BCE17A1529ACC8007AD2E7 /* compiledict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE14C1529ACC8007AD2E7 /* compiledict.cpp */; };
+		C6BCE17B1529ACC8007AD2E7 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE14D1529ACC8007AD2E7 /* debug.cpp */; };
+		C6BCE17C1529ACC8007AD2E7 /* dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE14F1529ACC8007AD2E7 /* dictionary.cpp */; };
+		C6BCE17D1529ACC8007AD2E7 /* espeak_command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1501529ACC8007AD2E7 /* espeak_command.cpp */; };
+		C6BCE17F1529ACC8007AD2E7 /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1531529ACC8007AD2E7 /* event.cpp */; };
+		C6BCE1801529ACC8007AD2E7 /* fifo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1551529ACC8007AD2E7 /* fifo.cpp */; };
+		C6BCE1811529ACC8007AD2E7 /* intonation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1571529ACC8007AD2E7 /* intonation.cpp */; };
+		C6BCE1821529ACC8007AD2E7 /* klatt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1581529ACC8007AD2E7 /* klatt.cpp */; };
+		C6BCE1831529ACC8007AD2E7 /* mbrowrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE15A1529ACC8007AD2E7 /* mbrowrap.cpp */; };
+		C6BCE1841529ACC8007AD2E7 /* numbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE15C1529ACC8007AD2E7 /* numbers.cpp */; };
+		C6BCE1851529ACC8007AD2E7 /* phonemelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE15E1529ACC8007AD2E7 /* phonemelist.cpp */; };
+		C6BCE1861529ACC8007AD2E7 /* readclause.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1621529ACC8007AD2E7 /* readclause.cpp */; };
+		C6BCE1871529ACC8007AD2E7 /* setlengths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1631529ACC8007AD2E7 /* setlengths.cpp */; };
+		C6BCE1881529ACC8007AD2E7 /* sonic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1651529ACC8007AD2E7 /* sonic.cpp */; };
+		C6BCE1891529ACC8007AD2E7 /* speak_lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1671529ACC8007AD2E7 /* speak_lib.cpp */; };
+		C6BCE18B1529ACC8007AD2E7 /* synth_mbrola.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE16C1529ACC8007AD2E7 /* synth_mbrola.cpp */; };
+		C6BCE18C1529ACC8007AD2E7 /* synthdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE16D1529ACC8007AD2E7 /* synthdata.cpp */; };
+		C6BCE18D1529ACC8007AD2E7 /* synthesize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE16E1529ACC8007AD2E7 /* synthesize.cpp */; };
+		C6BCE18E1529ACC8007AD2E7 /* tr_languages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1701529ACC8007AD2E7 /* tr_languages.cpp */; };
+		C6BCE18F1529ACC8007AD2E7 /* translate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1711529ACC8007AD2E7 /* translate.cpp */; };
+		C6BCE1901529ACC8007AD2E7 /* voices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1741529ACC8007AD2E7 /* voices.cpp */; };
+		C6BCE1911529ACC8007AD2E7 /* wave_pulse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1751529ACC8007AD2E7 /* wave_pulse.cpp */; };
+		C6BCE1921529ACC8007AD2E7 /* wave_sada.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1761529ACC8007AD2E7 /* wave_sada.cpp */; };
+		C6BCE1931529ACC8007AD2E7 /* wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1771529ACC8007AD2E7 /* wave.cpp */; };
+		C6BCE1941529ACC8007AD2E7 /* wavegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE1791529ACC8007AD2E7 /* wavegen.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6BCE0D21529AB36007AD2E7 /* PTeSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTeSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BCE0D61529AB36007AD2E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C6BCE0D81529AB36007AD2E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6BCE0DA1529AB36007AD2E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C6BCE0DE1529AB36007AD2E7 /* PTeSpeak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTeSpeak-Info.plist"; sourceTree = "<group>"; };
+		C6BCE0E01529AB36007AD2E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6BCE0E21529AB36007AD2E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6BCE0E41529AB36007AD2E7 /* PTeSpeak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTeSpeak-Prefix.pch"; sourceTree = "<group>"; };
+		C6BCE0E51529AB36007AD2E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6BCE0E61529AB36007AD2E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6BCE0E91529AB36007AD2E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C6BCE0EC1529AB36007AD2E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C6BCE0EE1529AB36007AD2E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C6BCE0EF1529AB36007AD2E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6BCE0F61529AB54007AD2E7 /* PTeSpeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTeSpeak.h; sourceTree = "<group>"; };
+		C6BCE0F71529AB54007AD2E7 /* PTeSpeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTeSpeak.m; sourceTree = "<group>"; };
+		C6BCE0F91529AB67007AD2E7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C6BCE0FB1529AB8F007AD2E7 /* espeak-data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "espeak-data"; path = "espeak-1.46.14/espeak-data"; sourceTree = "<group>"; };
+		C6BCE14C1529ACC8007AD2E7 /* compiledict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compiledict.cpp; path = "espeak-1.46.14/src/compiledict.cpp"; sourceTree = "<group>"; };
+		C6BCE14D1529ACC8007AD2E7 /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = debug.cpp; path = "espeak-1.46.14/src/debug.cpp"; sourceTree = "<group>"; };
+		C6BCE14E1529ACC8007AD2E7 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug.h; path = "espeak-1.46.14/src/debug.h"; sourceTree = "<group>"; };
+		C6BCE14F1529ACC8007AD2E7 /* dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dictionary.cpp; path = "espeak-1.46.14/src/dictionary.cpp"; sourceTree = "<group>"; };
+		C6BCE1501529ACC8007AD2E7 /* espeak_command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = espeak_command.cpp; path = "espeak-1.46.14/src/espeak_command.cpp"; sourceTree = "<group>"; };
+		C6BCE1511529ACC8007AD2E7 /* espeak_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = espeak_command.h; path = "espeak-1.46.14/src/espeak_command.h"; sourceTree = "<group>"; };
+		C6BCE1531529ACC8007AD2E7 /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = event.cpp; path = "espeak-1.46.14/src/event.cpp"; sourceTree = "<group>"; };
+		C6BCE1541529ACC8007AD2E7 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event.h; path = "espeak-1.46.14/src/event.h"; sourceTree = "<group>"; };
+		C6BCE1551529ACC8007AD2E7 /* fifo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fifo.cpp; path = "espeak-1.46.14/src/fifo.cpp"; sourceTree = "<group>"; };
+		C6BCE1561529ACC8007AD2E7 /* fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fifo.h; path = "espeak-1.46.14/src/fifo.h"; sourceTree = "<group>"; };
+		C6BCE1571529ACC8007AD2E7 /* intonation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = intonation.cpp; path = "espeak-1.46.14/src/intonation.cpp"; sourceTree = "<group>"; };
+		C6BCE1581529ACC8007AD2E7 /* klatt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = klatt.cpp; path = "espeak-1.46.14/src/klatt.cpp"; sourceTree = "<group>"; };
+		C6BCE1591529ACC8007AD2E7 /* klatt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = klatt.h; path = "espeak-1.46.14/src/klatt.h"; sourceTree = "<group>"; };
+		C6BCE15A1529ACC8007AD2E7 /* mbrowrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mbrowrap.cpp; path = "espeak-1.46.14/src/mbrowrap.cpp"; sourceTree = "<group>"; };
+		C6BCE15B1529ACC8007AD2E7 /* mbrowrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mbrowrap.h; path = "espeak-1.46.14/src/mbrowrap.h"; sourceTree = "<group>"; };
+		C6BCE15C1529ACC8007AD2E7 /* numbers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = numbers.cpp; path = "espeak-1.46.14/src/numbers.cpp"; sourceTree = "<group>"; };
+		C6BCE15D1529ACC8007AD2E7 /* phoneme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = phoneme.h; path = "espeak-1.46.14/src/phoneme.h"; sourceTree = "<group>"; };
+		C6BCE15E1529ACC8007AD2E7 /* phonemelist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = phonemelist.cpp; path = "espeak-1.46.14/src/phonemelist.cpp"; sourceTree = "<group>"; };
+		C6BCE15F1529ACC8007AD2E7 /* portaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = portaudio.h; path = "espeak-1.46.14/src/portaudio.h"; sourceTree = "<group>"; };
+		C6BCE1601529ACC8007AD2E7 /* portaudio18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = portaudio18.h; path = "espeak-1.46.14/src/portaudio18.h"; sourceTree = "<group>"; };
+		C6BCE1611529ACC8007AD2E7 /* portaudio19.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = portaudio19.h; path = "espeak-1.46.14/src/portaudio19.h"; sourceTree = "<group>"; };
+		C6BCE1621529ACC8007AD2E7 /* readclause.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = readclause.cpp; path = "espeak-1.46.14/src/readclause.cpp"; sourceTree = "<group>"; };
+		C6BCE1631529ACC8007AD2E7 /* setlengths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = setlengths.cpp; path = "espeak-1.46.14/src/setlengths.cpp"; sourceTree = "<group>"; };
+		C6BCE1641529ACC8007AD2E7 /* sintab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sintab.h; path = "espeak-1.46.14/src/sintab.h"; sourceTree = "<group>"; };
+		C6BCE1651529ACC8007AD2E7 /* sonic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sonic.cpp; path = "espeak-1.46.14/src/sonic.cpp"; sourceTree = "<group>"; };
+		C6BCE1661529ACC8007AD2E7 /* sonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sonic.h; path = "espeak-1.46.14/src/sonic.h"; sourceTree = "<group>"; };
+		C6BCE1671529ACC8007AD2E7 /* speak_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = speak_lib.cpp; path = "espeak-1.46.14/src/speak_lib.cpp"; sourceTree = "<group>"; };
+		C6BCE1681529ACC8007AD2E7 /* speak_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = speak_lib.h; path = "espeak-1.46.14/src/speak_lib.h"; sourceTree = "<group>"; };
+		C6BCE16A1529ACC8007AD2E7 /* speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = speech.h; path = "espeak-1.46.14/src/speech.h"; sourceTree = "<group>"; };
+		C6BCE16B1529ACC8007AD2E7 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StdAfx.h; path = "espeak-1.46.14/src/StdAfx.h"; sourceTree = "<group>"; };
+		C6BCE16C1529ACC8007AD2E7 /* synth_mbrola.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = synth_mbrola.cpp; path = "espeak-1.46.14/src/synth_mbrola.cpp"; sourceTree = "<group>"; };
+		C6BCE16D1529ACC8007AD2E7 /* synthdata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = synthdata.cpp; path = "espeak-1.46.14/src/synthdata.cpp"; sourceTree = "<group>"; };
+		C6BCE16E1529ACC8007AD2E7 /* synthesize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = synthesize.cpp; path = "espeak-1.46.14/src/synthesize.cpp"; sourceTree = "<group>"; };
+		C6BCE16F1529ACC8007AD2E7 /* synthesize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = synthesize.h; path = "espeak-1.46.14/src/synthesize.h"; sourceTree = "<group>"; };
+		C6BCE1701529ACC8007AD2E7 /* tr_languages.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tr_languages.cpp; path = "espeak-1.46.14/src/tr_languages.cpp"; sourceTree = "<group>"; };
+		C6BCE1711529ACC8007AD2E7 /* translate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = translate.cpp; path = "espeak-1.46.14/src/translate.cpp"; sourceTree = "<group>"; };
+		C6BCE1721529ACC8007AD2E7 /* translate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translate.h; path = "espeak-1.46.14/src/translate.h"; sourceTree = "<group>"; };
+		C6BCE1731529ACC8007AD2E7 /* voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = voice.h; path = "espeak-1.46.14/src/voice.h"; sourceTree = "<group>"; };
+		C6BCE1741529ACC8007AD2E7 /* voices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = voices.cpp; path = "espeak-1.46.14/src/voices.cpp"; sourceTree = "<group>"; };
+		C6BCE1751529ACC8007AD2E7 /* wave_pulse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave_pulse.cpp; path = "espeak-1.46.14/src/wave_pulse.cpp"; sourceTree = "<group>"; };
+		C6BCE1761529ACC8007AD2E7 /* wave_sada.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave_sada.cpp; path = "espeak-1.46.14/src/wave_sada.cpp"; sourceTree = "<group>"; };
+		C6BCE1771529ACC8007AD2E7 /* wave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave.cpp; path = "espeak-1.46.14/src/wave.cpp"; sourceTree = "<group>"; };
+		C6BCE1781529ACC8007AD2E7 /* wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wave.h; path = "espeak-1.46.14/src/wave.h"; sourceTree = "<group>"; };
+		C6BCE1791529ACC8007AD2E7 /* wavegen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wavegen.cpp; path = "espeak-1.46.14/src/wavegen.cpp"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6BCE0CF1529AB36007AD2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BCE0FA1529AB67007AD2E7 /* AudioToolbox.framework in Frameworks */,
+				C6BCE0D71529AB36007AD2E7 /* UIKit.framework in Frameworks */,
+				C6BCE0D91529AB36007AD2E7 /* Foundation.framework in Frameworks */,
+				C6BCE0DB1529AB36007AD2E7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6BCE0C71529AB36007AD2E7 = {
+			isa = PBXGroup;
+			children = (
+				C6BCE0FF1529ACAA007AD2E7 /* espeak-src */,
+				C6BCE0FB1529AB8F007AD2E7 /* espeak-data */,
+				C6BCE0DC1529AB36007AD2E7 /* PTeSpeak */,
+				C6BCE0D51529AB36007AD2E7 /* Frameworks */,
+				C6BCE0D31529AB36007AD2E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6BCE0D31529AB36007AD2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE0D21529AB36007AD2E7 /* PTeSpeak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6BCE0D51529AB36007AD2E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE0F91529AB67007AD2E7 /* AudioToolbox.framework */,
+				C6BCE0D61529AB36007AD2E7 /* UIKit.framework */,
+				C6BCE0D81529AB36007AD2E7 /* Foundation.framework */,
+				C6BCE0DA1529AB36007AD2E7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6BCE0DC1529AB36007AD2E7 /* PTeSpeak */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE0F61529AB54007AD2E7 /* PTeSpeak.h */,
+				C6BCE0F71529AB54007AD2E7 /* PTeSpeak.m */,
+				C6BCE0E51529AB36007AD2E7 /* AppDelegate.h */,
+				C6BCE0E61529AB36007AD2E7 /* AppDelegate.m */,
+				C6BCE0E81529AB36007AD2E7 /* MainStoryboard_iPhone.storyboard */,
+				C6BCE0EB1529AB36007AD2E7 /* MainStoryboard_iPad.storyboard */,
+				C6BCE0EE1529AB36007AD2E7 /* ViewController.h */,
+				C6BCE0EF1529AB36007AD2E7 /* ViewController.m */,
+				C6BCE0DD1529AB36007AD2E7 /* Supporting Files */,
+			);
+			path = PTeSpeak;
+			sourceTree = "<group>";
+		};
+		C6BCE0DD1529AB36007AD2E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE0DE1529AB36007AD2E7 /* PTeSpeak-Info.plist */,
+				C6BCE0DF1529AB36007AD2E7 /* InfoPlist.strings */,
+				C6BCE0E21529AB36007AD2E7 /* main.m */,
+				C6BCE0E41529AB36007AD2E7 /* PTeSpeak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6BCE0FF1529ACAA007AD2E7 /* espeak-src */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE14C1529ACC8007AD2E7 /* compiledict.cpp */,
+				C6BCE14D1529ACC8007AD2E7 /* debug.cpp */,
+				C6BCE14E1529ACC8007AD2E7 /* debug.h */,
+				C6BCE14F1529ACC8007AD2E7 /* dictionary.cpp */,
+				C6BCE1501529ACC8007AD2E7 /* espeak_command.cpp */,
+				C6BCE1511529ACC8007AD2E7 /* espeak_command.h */,
+				C6BCE1531529ACC8007AD2E7 /* event.cpp */,
+				C6BCE1541529ACC8007AD2E7 /* event.h */,
+				C6BCE1551529ACC8007AD2E7 /* fifo.cpp */,
+				C6BCE1561529ACC8007AD2E7 /* fifo.h */,
+				C6BCE1571529ACC8007AD2E7 /* intonation.cpp */,
+				C6BCE1581529ACC8007AD2E7 /* klatt.cpp */,
+				C6BCE1591529ACC8007AD2E7 /* klatt.h */,
+				C6BCE15A1529ACC8007AD2E7 /* mbrowrap.cpp */,
+				C6BCE15B1529ACC8007AD2E7 /* mbrowrap.h */,
+				C6BCE15C1529ACC8007AD2E7 /* numbers.cpp */,
+				C6BCE15D1529ACC8007AD2E7 /* phoneme.h */,
+				C6BCE15E1529ACC8007AD2E7 /* phonemelist.cpp */,
+				C6BCE15F1529ACC8007AD2E7 /* portaudio.h */,
+				C6BCE1601529ACC8007AD2E7 /* portaudio18.h */,
+				C6BCE1611529ACC8007AD2E7 /* portaudio19.h */,
+				C6BCE1621529ACC8007AD2E7 /* readclause.cpp */,
+				C6BCE1631529ACC8007AD2E7 /* setlengths.cpp */,
+				C6BCE1641529ACC8007AD2E7 /* sintab.h */,
+				C6BCE1651529ACC8007AD2E7 /* sonic.cpp */,
+				C6BCE1661529ACC8007AD2E7 /* sonic.h */,
+				C6BCE1671529ACC8007AD2E7 /* speak_lib.cpp */,
+				C6BCE1681529ACC8007AD2E7 /* speak_lib.h */,
+				C6BCE16A1529ACC8007AD2E7 /* speech.h */,
+				C6BCE16B1529ACC8007AD2E7 /* StdAfx.h */,
+				C6BCE16C1529ACC8007AD2E7 /* synth_mbrola.cpp */,
+				C6BCE16D1529ACC8007AD2E7 /* synthdata.cpp */,
+				C6BCE16E1529ACC8007AD2E7 /* synthesize.cpp */,
+				C6BCE16F1529ACC8007AD2E7 /* synthesize.h */,
+				C6BCE1701529ACC8007AD2E7 /* tr_languages.cpp */,
+				C6BCE1711529ACC8007AD2E7 /* translate.cpp */,
+				C6BCE1721529ACC8007AD2E7 /* translate.h */,
+				C6BCE1731529ACC8007AD2E7 /* voice.h */,
+				C6BCE1741529ACC8007AD2E7 /* voices.cpp */,
+				C6BCE1751529ACC8007AD2E7 /* wave_pulse.cpp */,
+				C6BCE1761529ACC8007AD2E7 /* wave_sada.cpp */,
+				C6BCE1771529ACC8007AD2E7 /* wave.cpp */,
+				C6BCE1781529ACC8007AD2E7 /* wave.h */,
+				C6BCE1791529ACC8007AD2E7 /* wavegen.cpp */,
+			);
+			name = "espeak-src";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6BCE0D11529AB36007AD2E7 /* PTeSpeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BCE0F31529AB36007AD2E7 /* Build configuration list for PBXNativeTarget "PTeSpeak" */;
+			buildPhases = (
+				C6BCE0CE1529AB36007AD2E7 /* Sources */,
+				C6BCE0CF1529AB36007AD2E7 /* Frameworks */,
+				C6BCE0D01529AB36007AD2E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTeSpeak;
+			productName = PTeSpeak;
+			productReference = C6BCE0D21529AB36007AD2E7 /* PTeSpeak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6BCE0C91529AB36007AD2E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C6BCE0CC1529AB36007AD2E7 /* Build configuration list for PBXProject "PTeSpeak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C6BCE0C71529AB36007AD2E7;
+			productRefGroup = C6BCE0D31529AB36007AD2E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6BCE0D11529AB36007AD2E7 /* PTeSpeak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6BCE0D01529AB36007AD2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BCE0E11529AB36007AD2E7 /* InfoPlist.strings in Resources */,
+				C6BCE0EA1529AB36007AD2E7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C6BCE0ED1529AB36007AD2E7 /* MainStoryboard_iPad.storyboard in Resources */,
+				C6BCE0FC1529AB8F007AD2E7 /* espeak-data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6BCE0CE1529AB36007AD2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BCE0E31529AB36007AD2E7 /* main.m in Sources */,
+				C6BCE0E71529AB36007AD2E7 /* AppDelegate.m in Sources */,
+				C6BCE0F01529AB36007AD2E7 /* ViewController.m in Sources */,
+				C6BCE0F81529AB55007AD2E7 /* PTeSpeak.m in Sources */,
+				C6BCE17A1529ACC8007AD2E7 /* compiledict.cpp in Sources */,
+				C6BCE17B1529ACC8007AD2E7 /* debug.cpp in Sources */,
+				C6BCE17C1529ACC8007AD2E7 /* dictionary.cpp in Sources */,
+				C6BCE17D1529ACC8007AD2E7 /* espeak_command.cpp in Sources */,
+				C6BCE17F1529ACC8007AD2E7 /* event.cpp in Sources */,
+				C6BCE1801529ACC8007AD2E7 /* fifo.cpp in Sources */,
+				C6BCE1811529ACC8007AD2E7 /* intonation.cpp in Sources */,
+				C6BCE1821529ACC8007AD2E7 /* klatt.cpp in Sources */,
+				C6BCE1831529ACC8007AD2E7 /* mbrowrap.cpp in Sources */,
+				C6BCE1841529ACC8007AD2E7 /* numbers.cpp in Sources */,
+				C6BCE1851529ACC8007AD2E7 /* phonemelist.cpp in Sources */,
+				C6BCE1861529ACC8007AD2E7 /* readclause.cpp in Sources */,
+				C6BCE1871529ACC8007AD2E7 /* setlengths.cpp in Sources */,
+				C6BCE1881529ACC8007AD2E7 /* sonic.cpp in Sources */,
+				C6BCE1891529ACC8007AD2E7 /* speak_lib.cpp in Sources */,
+				C6BCE18B1529ACC8007AD2E7 /* synth_mbrola.cpp in Sources */,
+				C6BCE18C1529ACC8007AD2E7 /* synthdata.cpp in Sources */,
+				C6BCE18D1529ACC8007AD2E7 /* synthesize.cpp in Sources */,
+				C6BCE18E1529ACC8007AD2E7 /* tr_languages.cpp in Sources */,
+				C6BCE18F1529ACC8007AD2E7 /* translate.cpp in Sources */,
+				C6BCE1901529ACC8007AD2E7 /* voices.cpp in Sources */,
+				C6BCE1911529ACC8007AD2E7 /* wave_pulse.cpp in Sources */,
+				C6BCE1921529ACC8007AD2E7 /* wave_sada.cpp in Sources */,
+				C6BCE1931529ACC8007AD2E7 /* wave.cpp in Sources */,
+				C6BCE1941529ACC8007AD2E7 /* wavegen.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6BCE0DF1529AB36007AD2E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6BCE0E01529AB36007AD2E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6BCE0E81529AB36007AD2E7 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6BCE0E91529AB36007AD2E7 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C6BCE0EB1529AB36007AD2E7 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6BCE0EC1529AB36007AD2E7 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6BCE0F11529AB36007AD2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6BCE0F21529AB36007AD2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6BCE0F41529AB36007AD2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTeSpeak/PTeSpeak-Prefix.pch";
+				INFOPLIST_FILE = "PTeSpeak/PTeSpeak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C6BCE0F51529AB36007AD2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTeSpeak/PTeSpeak-Prefix.pch";
+				INFOPLIST_FILE = "PTeSpeak/PTeSpeak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6BCE0CC1529AB36007AD2E7 /* Build configuration list for PBXProject "PTeSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BCE0F11529AB36007AD2E7 /* Debug */,
+				C6BCE0F21529AB36007AD2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BCE0F31529AB36007AD2E7 /* Build configuration list for PBXNativeTarget "PTeSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BCE0F41529AB36007AD2E7 /* Debug */,
+				C6BCE0F51529AB36007AD2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6BCE0C91529AB36007AD2E7 /* Project object */;
+}
