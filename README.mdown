@@ -13,3 +13,83 @@ Extract and copy entire directory `espeak-1.46.14` to your just cloned `PTeSpeak
 
 Note: You need XCode 4.0 in order to build and run demo app.
 
+
+How to use
+----------
+
+1. Copy PTeSpeak.m and PTeSpeak.h files to your source tree and add it to XCode project.
+2. Implement PTeSpeakDelegate protocol.
+3. Just #import the PTeSpeak.h header
+
+`#import "PTeSpeak.h"`
+
+Example of how to create PTeSpeak class to synthesize speech:
+
+    PTeSpeak *espeak = [PTeSpeak sharedPTeSpeak];
+    
+    [espeak setDelegate:self];
+    [espeak setupWithVoice:@"ka" volume:100 rate:150 pitch:40];
+    [espeak speak:@"ფიცარი"];
+    
+Your class will have to implement the PTeSpeakDelegate protocol, and to implement the `speakDidStart:`, `speakDidEnd:` and `speakWithError:error:` methods from this protocol:
+
+    - (void)speakDidStart:(PTeSpeak *)espeak
+    {
+        NSLog(@"Start speaking…");
+    }
+    
+    - (void)speakDidEnd:(PTeSpeak *)espeak
+    {
+        NSLog(@"Stop speaking…");
+    }
+    
+    - (void)speakWithError:(PTeSpeak *)espeak error:(OSStatus)error
+    {
+        NSLog(@"Error %d while speaking", error);
+    }
+
+
+Class References
+----------------
+
+### PTeSpeak
+
+#### setupWithVoice
+
+`- (NSInteger)setupWithVoice:(NSString*)voiceName volume:(NSInteger)volume rate:(NSInteger)rate pitch:(NSInteger)pitch`
+
+Setup espeak engine.
+`voiceName` - Languge ISO2 code (e.g. ka - Georgian, en - English)
+`volume` - Voice amplitude (0 to 200)
+`rate` - Speed in words per minute (80 to 450)
+`pitch` - Pitch adjustment (0 to 99)
+
+#### speak
+
+`- (void)speak:(NSString*)text`
+
+`text` to speak.
+
+#### isSpeak
+
+`- (BOOL)isSpeak`
+
+Check speak status.
+
+#### stop
+
+`- (BOOL)stop`
+
+Stop speaking.
+
+#### pause
+
+`- (BOOL)pause`
+
+Pause speaking.
+
+#### start
+
+`- (BOOL)start`
+
+Start speaking.

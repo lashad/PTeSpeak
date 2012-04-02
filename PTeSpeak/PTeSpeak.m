@@ -175,6 +175,12 @@ static int PTeSpeakSynthCallback(short *buffer, int numsamples, espeak_EVENT *ev
     return YES;
 }
 
+- (BOOL)start
+{
+    AudioQueueStart(self.outputQueue, nil);
+    
+    return YES;
+}
 
 - (void)dealloc {
 

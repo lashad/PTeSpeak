@@ -35,6 +35,7 @@
 - (BOOL)isSpeak;
 - (BOOL)stop;
 - (BOOL)pause;
+- (BOOL)start;
 
 @end
 
