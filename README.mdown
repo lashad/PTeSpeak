@@ -4,6 +4,8 @@ PTeSpeak
 Do you want your iPhone/iPad to speak Georgian? Or any other language ?
 PTeSpeak is a wrapper class for popular open source engine [eSpeak](http://espeak.sourceforge.net/).
 
+![](http://dl.dropbox.com/u/15878595/PTeSpeak.png)
+
 How to build demo app
 ---------------------
 - Git clone `PTeSpeak` demo app to your local disk.

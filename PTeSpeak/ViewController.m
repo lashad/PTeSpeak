@@ -24,12 +24,12 @@
 
 - (void)speakDidEnd:(PTeSpeak *)espeak
 {
-    [button setTitle:@"Start" forState:UIControlStateNormal];
+    [button setTitle:@"Speak" forState:UIControlStateNormal];
 }
 
 - (void)speakWithError:(PTeSpeak *)espeak error:(OSStatus)error
 {
-    [button setTitle:@"Start" forState:UIControlStateNormal];
+    [button setTitle:@"Speak" forState:UIControlStateNormal];
 }
 
 - (IBAction)speak:(id)sender
