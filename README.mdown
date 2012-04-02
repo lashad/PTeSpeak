@@ -19,7 +19,8 @@ How to use
 
 1. Copy PTeSpeak.m and PTeSpeak.h files to your source tree and add it to XCode project.
 2. Implement PTeSpeakDelegate protocol.
-3. Just #import the PTeSpeak.h header
+3. Add `AudioToolbox.framework` to your project.
+4. Just #import the PTeSpeak.h header
 
 `#import "PTeSpeak.h"`
 
