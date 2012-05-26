@@ -10,7 +10,7 @@ PTeSpeak is a wrapper class for popular open source engine [eSpeak](http://espea
 How to build demo app
 ---------------------
 - Git clone `PTeSpeak` demo app to your local disk.
-- Download the latest eSpeak development version at [Downlaod](http://espeak.sourceforge.net/test/espeak-1.46.14.zip).
+- Download the latest eSpeak development version at [Downlaod](http://espeak.sourceforge.net/test/latest.html).
 Extract and copy entire directory `espeak-1.46.14` to your just cloned `PTeSpeak` directory.
 - Open `PTeSpeak.xcodeproj` XCode project and run demo app.
 
